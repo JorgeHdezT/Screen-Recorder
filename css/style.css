@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    background-color: #292929;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    width: 100%; /* Ocupa todo el ancho de la página */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 10vh;
+    background-color: #121212;
+    border-bottom: 2px solid white;
+}
+
+header img {
+    width: 20%;
+    max-width: 100px; /* Máximo ancho para escalabilidad */
+}
+
+header h1 {
+    color:  #5cf8fd;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+#start {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid aqua;
+    border-radius: 30px;
+    padding: 15px;
+
+  }
+
+  #start .record {
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(93, 233, 255);
+    box-sizing: border-box;
+    border-width: 15px 15px 15px 30px;
+  }
+
+  #stop {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border: 2px solid rgb(255, 65, 51);
+    border-radius: 30px;
+    padding: 15px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*La prima penelopa estuvo aqui*/
