@@ -10,8 +10,23 @@
 <body>
 
     <header>
-        <img src="images/logo_white.png" alt="">
-        <h1>Screen Recorder by HacheTTP_Dev</h1>
+        <div class="mainTitle">
+            <img src="images/logo_white.png" alt="">
+            <h1>Screen Recorder by HacheTTP_Dev</h1>
+        </div>
+        <!-- Agrega este código después del comentario "Guille estuvo aqui" -->
+        <div id="languageSelector">
+            <label for="language">Select language:</label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="es">Español Castellano</option>
+                <option value="en"selected>English</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="ru">Русский</option>
+                <option value="ja">日本語</option>
+            </select>
+        </div>
+
     </header>
 
     <main>
@@ -27,6 +42,9 @@
                 </button>
             
                 <button id="stop">
+                    <div class="circle" >
+                        <div class="square"></div>
+                    </div>
                     Stop Recording
                 </button>
             </div>
@@ -43,9 +61,10 @@
             <p>Note: The output video will be saved as .webm as default</p>
         </section>
         
-
+        <img src="images/h1.png" alt="" id="sello">
         
     </main>
     <!--Guille estuvo aqui-->
+    <script src="js/traduccion.js"></script>
 </body>
 </html>
