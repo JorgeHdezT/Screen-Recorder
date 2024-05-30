@@ -34,54 +34,8 @@ Este es un proyecto de grabador de pantalla que te permite capturar la pantalla 
 4. Cuando hayas terminado, haz clic en **Detener grabación**.
 5. Elige dónde deseas guardar el archivo `.webm`.
 
-## Código
+### Mención
 
-### JavaScript
-
-El archivo principal de JavaScript para la funcionalidad de grabación es `script.js`:
-
-```javascript
-let mediaRecorder;
-
-const $button = document.querySelector('button');
-
-$button.addEventListener('click', async () => {
-  try {
-    const mediaStream = await navigator.mediaDevices.getDisplayMedia({ audio: true, video: { frameRate: { ideal: 30 } } });
-    mediaRecorder = new MediaRecorder(mediaStream, {
-      mimeType: 'video/webm;codecs=vp8,opus'
-    });
-
-    const chunks = [];
-
-    mediaRecorder.addEventListener("dataavailable", (e) => {
-      if (e.data.size > 0) {
-        chunks.push(e.data);
-      }
-    });
-
-    mediaRecorder.addEventListener("stop", () => {
-      const blob = new Blob(chunks, { type: 'video/webm;codecs=vp8,opus' });
-      const link = document.createElement("a");
-      link.href = URL.createObjectURL(blob);
-      link.download = "captura_video.webm";
-      link.click();
-    });
-
-    mediaRecorder.start();
-
-  } catch (error) {
-    console.error("Error:", error);
-  }
-});
-
-const stopButton = document.getElementById("stop");
-stopButton.addEventListener("click", function () {
-  try {
-    if (mediaRecorder) {
-      mediaRecorder.stop();
-    }
-  } catch (error) {
-    console.error("Error:", error);
-  }
-});
+Agradecer a <a href="https://github.com/midudev"> MiduDev </a>
+Ya que esta idea la he sacado de un video que ha subido a su canal de Youtube.
+Llevando el concepto a mi terreno y mejorándolo aún más.
