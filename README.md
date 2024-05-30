@@ -1,6 +1,6 @@
 # Screen Recorder by HacheTTP_Dev
 
-![Screen Recorder Logo](images/logo_white.png)
+![Screen Recorder Logo](images/screenRecorder.png)
 
 ## Descripción
 
